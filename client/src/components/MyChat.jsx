@@ -78,7 +78,7 @@ const MyChat = ({ myChats, dispatch }) => {
                                                     items.chatName : getSender(items.users, getUserDetails()).firstname + ' ' + getSender(items.users, getUserDetails()).lastname
                                                 }
                                             </h1>
-                                            <div className={`${notifications.find((n) => n.chat._id === items._id) ? 'text-[#00a884]' : 'text-gray-600'} flex gap-2 items-center w-full`}>
+                                            <div className={`${notifications.find((n) => n.chat._id === items._id) ? 'text-[#21175a]' : 'text-gray-600'} flex gap-2 items-center w-full`}>
                                                 {
                                                     items.latestMessage && (items.isGroupChat || items.latestMessage?.sender?._id === getUserDetails()._id) &&
                                                     <span className='font-semibold text-sm'>{`${items.latestMessage?.sender?._id === getUserDetails()._id ? 'You' : items.latestMessage?.sender?.firstname}: `}</span>
@@ -87,7 +87,7 @@ const MyChat = ({ myChats, dispatch }) => {
                                             </div>
                                         </div>
                                         <div className="flex flex-col flex-none text-xs items-end space-y-2 w-20 pr-2">
-                                            <p className={`${notifications.find((n) => n.chat._id === items._id) ? 'text-[#00a884] font-medium' : 'text-gray-500'} text-xs`}>{moment(items.latestMessage?.createdAt).format("DD/MM/YYYY")}</p>
+                                            <p className={`${notifications.find((n) => n.chat._id === items._id) ? 'text-[#14143f] font-medium' : 'text-gray-500'} text-xs`}>{moment(items.latestMessage?.createdAt).format("DD/MM/YYYY")}</p>
                                             {/* <div className="flex bg-[#00a884] justify-center text-xs items-center rounded-full w-4 h-4 text-black">
                                                 1
                                             </div> */}

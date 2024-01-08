@@ -13,7 +13,7 @@ import io from "socket.io-client";
 import { setNotification, setOnlineUsers } from '../redux/state/settingSlice'
 import { myChatRequest } from '../apiRequest/chatRequset'
 
-const ENDPOINT = "http://localhost:5000/"
+const ENDPOINT = "https://pesalam.onrender.com/"
 export var socket, selectedChatCompare
 
 const ChatBox = ({ dispatch }) => {
